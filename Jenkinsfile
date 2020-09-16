@@ -10,7 +10,7 @@ pipeline {
             steps {
                 sh 'su'
                 sh 'yum install -y expect'
-                sh 'sh /home/lucy/sh/test.sh' 
+                sh '/home/lucy/sh/test.sh' 
             }
         }
     }
