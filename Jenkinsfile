@@ -8,7 +8,8 @@ pipeline {
         }
         stage('Deploy') { 
             steps {
-                sh 'su yum install -y expect'
+                sh 'su'
+                sh 'yum install -y expect'
                 sh 'sh /home/lucy/sh/test.sh' 
             }
         }
